@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Contoso AI Demo</title>
+<meta name="description" content="Demostración de Contoso AI Demo publicada automáticamente desde SYNTAXIA HUB APPS." />
+<style>
+  :root {
+    --azul: #2c59df;
+    --azul-oscuro: #14225a;
+    --tinta: #0d1224;
+    --suave: #f5f7fc;
+    --borde: rgba(20, 34, 90, .1);
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+    color: var(--tinta);
+    background: var(--suave);
+    line-height: 1.6;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1.25rem clamp(1rem, 5vw, 4rem);
+    background: #fff;
+    border-bottom: 1px solid var(--borde);
+    position: sticky;
+    top: 0;
+    z-index: 5;
+  }
+  header img { height: 40px; width: auto; }
+  header span {
+    font-size: .8rem;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--azul);
+    font-weight: 600;
+  }
+  .hero {
+    position: relative;
+    min-height: 62vh;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding: clamp(3rem, 9vw, 7rem) 1.5rem;
+    color: #fff;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("assets/hero.jpg") center/cover no-repeat;
+    transform: scale(1.04);
+  }
+  .hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(20,34,90,.88), rgba(44,89,223,.72));
+  }
+  .hero > * { position: relative; z-index: 1; }
+  .hero .marca {
+    width: 96px;
+    height: 96px;
+    object-fit: contain;
+    border-radius: 24px;
+    background: rgba(255,255,255,.92);
+    padding: 12px;
+    box-shadow: 0 24px 60px rgba(0,0,0,.28);
+    margin-bottom: 1.75rem;
+  }
+  .hero h1 {
+    margin: 0;
+    font-size: clamp(2.6rem, 9vw, 5.5rem);
+    line-height: 1.05;
+    letter-spacing: -.03em;
+    font-weight: 800;
+  }
+  .hero p {
+    margin: 1.25rem auto 0;
+    max-width: 44rem;
+    font-size: clamp(1rem, 2.2vw, 1.25rem);
+    color: rgba(255,255,255,.88);
+  }
+  .etiqueta {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    padding: .35rem 1rem;
+    border-radius: 999px;
+    border: 1px solid rgba(255,255,255,.4);
+    background: rgba(255,255,255,.12);
+    font-size: .78rem;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+  }
+  main { padding: clamp(3rem, 7vw, 6rem) clamp(1rem, 5vw, 4rem); }
+  .panel {
+    max-width: 1100px;
+    margin: 0 auto;
+    background: #fff;
+    border: 1px solid var(--borde);
+    border-radius: 28px;
+    padding: clamp(1.5rem, 4vw, 3rem);
+    box-shadow: 0 30px 70px rgba(20,34,90,.12);
+  }
+  .panel h2 {
+    margin: 0 0 .5rem;
+    font-size: clamp(1.5rem, 3.4vw, 2.25rem);
+    letter-spacing: -.02em;
+  }
+  .panel p.intro { margin: 0 0 2rem; color: #4d5680; max-width: 46rem; }
+  .panel figure { margin: 0; }
+  .panel figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 18px;
+    border: 1px solid var(--borde);
+    box-shadow: 0 20px 45px rgba(20,34,90,.16);
+  }
+  .rejilla {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    margin-top: 2.5rem;
+  }
+  .rejilla div {
+    background: var(--suave);
+    border: 1px solid var(--borde);
+    border-radius: 18px;
+    padding: 1.25rem;
+  }
+  .rejilla strong { display: block; color: var(--azul-oscuro); }
+  .rejilla span { color: #545d85; font-size: .92rem; }
+  footer {
+    text-align: center;
+    padding: 2.5rem 1rem 3.5rem;
+    color: #5b6488;
+    font-size: .9rem;
+  }
+  footer img { height: 28px; opacity: .75; margin-bottom: .75rem; display: block; margin-inline: auto; }
+</style>
+</head>
+<body>
+  <header>
+    <img src="assets/logo-horizontal.png" alt="Contoso AI Demo" />
+    <span>Demo</span>
+  </header>
+
+  <section class="hero">
+    <img class="marca" src="assets/logo-cuadrado.png" alt="Logotipo de Contoso AI Demo" />
+    <div class="etiqueta">SYNTAXIA HUB APPS</div>
+    <h1>Contoso AI Demo</h1>
+    <p>Aplicación de demostración publicada automáticamente desde GitHub en Azure Web Apps, con custodia de credenciales y ficha técnica en el Hub.</p>
+  </section>
+
+  <main>
+    <div class="panel">
+      <h2>Pantalla principal</h2>
+      <p class="intro">Vista del producto tal y como aparece en la ficha técnica de Contoso AI Demo dentro de SYNTAXIA HUB APPS.</p>
+      <figure><img src="assets/pantalla-principal.jpg" alt="Pantalla principal de Contoso AI Demo" /></figure>
+      <div class="rejilla">
+        <div><strong>Repositorio</strong><span>Creado y versionado en GitHub</span></div>
+        <div><strong>Publicación</strong><span>Azure Web App en Linux</span></div>
+        <div><strong>Custodia</strong><span>Credenciales cifradas en el Hub</span></div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <img src="assets/logo-horizontal.png" alt="Contoso AI Demo" />
+    Contoso AI Demo · Demostración generada por SYNTAXIA HUB APPS
+  </footer>
+</body>
+</html>
